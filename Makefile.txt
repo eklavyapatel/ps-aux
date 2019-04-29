@@ -1,0 +1,7 @@
+all: my_ps
+
+my_ps: my_ps.c
+	gcc -Wall -Werror -fsanitize=address -std=c99 -o my_ps my_ps.c
+
+clean:
+	rm -rf my_ps
